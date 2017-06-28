@@ -3,6 +3,7 @@
   <Name>Marc DeOtis</Name>
   <Title>C# .NET Full Stack Web Developer</Title>
   <Location>Twin Cities, MN</Location>
+  
   <Social>
     <Phone>(763) 300-2509</Phone>
     <Email>marc@deotis.com</Email>
@@ -10,13 +11,57 @@
     <Linkedin-user>marc-deotis</Linkedin-user>
   </Social>
 
-  <Certifications>
+  <Experiences SectionTitle="Professional Experiences">
+    <Experience>
+      <Company>WYNIT Distribution, LLC</Company>
+      <SubCompany>(formerly Navarre Corporation)</SubCompany>
+      <FullDate>(Dec 2006 - May 2017)</FullDate>
+      <Title>HighJump Warehouse Systems Developer</Title>
+      <JobDates>Jul 2012 - May 2017</JobDates>
+      <Responsibilities>
+        <item>Lead new implementation of HighJump WMS 12.8 with others. Migration of legacy processes to help streamline implementation (SAP interface, Warehouse Control System (WCS) interface).  Project included development of product serial number scanning in all warehousing processes.</item>
+        <item>Using RedGate SQL tools to monitor performance, implemented performance enhancements which immediately reduced SQL Server CPU usage by 80\%</item>
+        <item>Architected and developed new processes for ConnectShip application integration from a depreciated interface.</item>
+        <item>Designed and built socket based communication with a third-party Warehouse Control System (WCS) to divert picks within zones, validate container weights and dictate the sortation of containers to shipping lanes. Including creation of detailed documentation of the communication to occur between the systems.</item>
+        <item>Configured changes to replenishment process to reduce orders waiting on product, nearly doubling the quantity of orders being picked by reducing the time lost by picking staff.</item>
+        <item>Assisted in execution of moving primary warehouse from Minnesota to Texas, and later Texas to Tennessee. Including additional development to warehouse system processes due to differences in operations between warehouses.</item>
+        <item>Developed and supported changes to HighJump Warehouse system integrated to SAP and conveyance/voice picking warehouse control system.</item>
+      </Responsibilities>
+    </Experience>
+
+    <Experience>
+      <Company>WYNIT Distribution, LLC</Company>
+      <SubCompany>(formerly Navarre Corporation)</SubCompany>
+      <FullDate>(Dec 2006 - May 2017)</FullDate>
+      <Title>HighJump Warehouse Systems Developer</Title>
+      <JobDates>Jul 2012 - May 2017</JobDates>
+      <Responsibilities>
+        <item>Lead new implementation of HighJump WMS 12.8 with others. Migration of legacy processes to help streamline implementation (SAP interface, Warehouse Control System (WCS) interface).  Project included development of product serial number scanning in all warehousing processes.</item>
+        <item>Using RedGate SQL tools to monitor performance, implemented performance enhancements which immediately reduced SQL Server CPU usage by 80\%</item>
+        <item>Architected and developed new processes for ConnectShip application integration from a depreciated interface.</item>
+        <item>Designed and built socket based communication with a third-party Warehouse Control System (WCS) to divert picks within zones, validate container weights and dictate the sortation of containers to shipping lanes. Including creation of detailed documentation of the communication to occur between the systems.</item>
+        <item>Configured changes to replenishment process to reduce orders waiting on product, nearly doubling the quantity of orders being picked by reducing the time lost by picking staff.</item>
+        <item>Assisted in execution of moving primary warehouse from Minnesota to Texas, and later Texas to Tennessee. Including additional development to warehouse system processes due to differences in operations between warehouses.</item>
+        <item>Developed and supported changes to HighJump Warehouse system integrated to SAP and conveyance/voice picking warehouse control system.</item>
+      </Responsibilities>
+    </Experience>
+  </Experiences>
+
+  <SingleColList SectionTitle="Random List">
+    <item>1: Steal ____</item>
+    <item>2: ?????</item>
+    <item>3: Profit!</item>
+  </SingleColList>
+  
+  <SingleColList SectionTitle="Certifications">
     <item>HighJump Advantage Architect</item>
     <item>HighJump Webwise</item>
     <item>HighJump Advantage System Administration</item>
-  </Certifications>
+  </SingleColList>
 
-  <TechnicalSkills>
+
+
+  <MultiColList SectionTitle="Technical Skills">
     <item>SQL Server 2008 / 2012</item>
     <item>Visual Studio 2015 / NUint</item>
     <item>Version Control (Git, TFS)</item>
@@ -35,6 +80,6 @@
     <item>BarTender</item>
     <item>Crystal Reports</item>
     <item>SQL Server Integration Services</item>
-  </TechnicalSkills>
+  </MultiColList>
   
 </Resume>

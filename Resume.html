@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container resume">
         <div class="row">
 
             <div class="text-center title-area">
@@ -25,16 +25,13 @@
 
             </div>
 
-            <div id="certification-area">
-                <h2>Certifications</h2>
-                <ul class="row"></ul>
+            <div id="Header" class="col-xs-12">
+
             </div>
 
-            <div id="technical-skills-area">
-                <h2>Technical Skills</h2>
-                <ul class="row"></ul>
-            </div>
+            <div id="Details" class="col-xs-12">
 
+            </div>
 
         </div>
     </div>
@@ -42,5 +39,24 @@
     <script src="Scripts/jquery-3.1.1.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/resume.js"></script>
+
+    <script id="single-col-list" type="text/html">
+        <div class="row" hidden>
+            <h2 class="title"></h2>
+            <ul>
+                <li class="item"></li>
+            </ul>
+        </div>
+    </script>
+
+    <script id="multi-col-list" type="text/html">
+        <div class="col-xs-12" hidden>
+            <h2 class="title"></h2>
+            <ul>
+                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 item"></li>
+            </ul>
+        </div>
+    </script>
+
 </body>
 </html>
