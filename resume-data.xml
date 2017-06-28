@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resume>
+  <Name>Marc DeOtis</Name>
+  <Title>C# .NET Full Stack Web Developer</Title>
+  <Location>Twin Cities, MN</Location>
+  <Social>
+    <Phone>(763) 300-2509</Phone>
+    <Email>marc@deotis.com</Email>
+    <Github-user>marcdeotis</Github-user>
+    <Linkedin-user>marc-deotis</Linkedin-user>
+  </Social>
+
+  <Certifications>
+    <item>HighJump Advantage Architect</item>
+    <item>HighJump Webwise</item>
+    <item>HighJump Advantage System Administration</item>
+  </Certifications>
+
+  <TechnicalSkills>
+    <item>SQL Server 2008 / 2012</item>
+    <item>Visual Studio 2015 / NUint</item>
+    <item>Version Control (Git, TFS)</item>
+    <item>HTML</item>
+    <item>CSS</item>
+    <item>JavaScript</item>
+    <item>Bootstrap Framework</item>
+    <item>C\# ASP .NET MVC</item>
+    <item>ASP .NET Web Api</item>
+    <item>jQuery</item>
+    <item>LINQ</item>
+    <item>Test Driven Development</item>
+    <item>Object-Oriented Programming</item>
+    <item>Entity Framework</item>
+    <item>Ninject</item>
+    <item>BarTender</item>
+    <item>Crystal Reports</item>
+    <item>SQL Server Integration Services</item>
+  </TechnicalSkills>
+  
+</Resume>
