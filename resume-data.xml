@@ -5,10 +5,25 @@
   <Location>Twin Cities, MN</Location>
   
   <Social>
-    <Phone>(763) 300-2509</Phone>
-    <Email>marc@deotis.com</Email>
-    <Github-user>marcdeotis</Github-user>
-    <Linkedin-user>marc-deotis</Linkedin-user>
+    <Account>
+      <Text>(763) 300-2509</Text>
+      <Link></Link>
+    </Account>
+    
+    <Account>
+      <Text>marc@deotis.com</Text>
+      <Link>mailto: marc@deotis.com</Link>
+    </Account>
+    
+    <Account>
+      <Text>marcdeotis</Text>
+      <Link>https://www.github.com/marcdeotis/</Link>
+    </Account>
+    
+    <Account>
+      <Text>marc-deotis</Text>
+      <Link>https://www.linkedin.com/in/marc-deotis/</Link>
+    </Account>
   </Social>
 
   <Experiences SectionTitle="Professional Experiences">
@@ -58,8 +73,6 @@
     <item>HighJump Webwise</item>
     <item>HighJump Advantage System Administration</item>
   </SingleColList>
-
-
 
   <MultiColList SectionTitle="Technical Skills">
     <item>SQL Server 2008 / 2012</item>

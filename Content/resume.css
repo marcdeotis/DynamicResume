@@ -1,0 +1,21 @@
+﻿body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.job-title {
+    font-family: 'Roboto', sans-serif;    
+}
+
+.city {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}

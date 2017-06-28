@@ -15,13 +15,13 @@ $(document).ready(function () {
 
     $('.resume').on('click', '#Header>.Header-Item', null, function () {
 
-        $('#Header').children().show();
-        $(this).hide();
-        $('#Details').children().hide();
+        $('#Header').children().show(500);
+        $(this).hide(500);
+        $('#Details').children().hide(500);
 
         console.log($(this).attr('data-index'));
 
-        $('#Details [data-index=' + $(this).attr('data-index') + ']').show();
+        $('#Details [data-index=' + $(this).attr('data-index') + ']').show(500);
 
     });
 
@@ -41,7 +41,10 @@ $(document).ready(function () {
 
 function UpdateUserData(xml) {
     //name
-    $('.name').text($(xml).find('Name').text());
+    $('.title-area .name').text($(xml).find('Name').text());
+    $('.title-area .job-title').text($(xml).find('Resume>Title').text());
+    $('.title-area .city').text($(xml).find('Location').text());
+
     //social networks
     $('#a-linkedin')
         .attr('href', 'https://www.linkedin.com/in/' + ($(xml).find('Linkedin-user').text()))
@@ -57,7 +60,33 @@ function UpdateUserData(xml) {
 
     $('#phone').text($(xml).find('Phone').text());
 
-    //stuff???
+    var template = $('#social-links').clone().html();
+    var html = $.parseHTML(template);
+    var itemTemplate = $(html).find('.social-text').clone();
+    $(html).remove('.social-text');
+
+    $(xml).find('Account').each(function (index, data) {
+        $(itemTemplate).text($(data).find('Text').text())
+
+        if ($(data).find('Link').text() == '') {
+            $(html).append(itemTemplate);
+        }
+        else {
+            $(html).append($('<a>').attr({
+                'href': $(data).find('Link').text(),
+                'target': '_blank'
+            }).append(itemTemplate));
+        }
+
+
+    });
+
+    console.log(html);
+
+    $('#social-area').append(html);
+
+
+
 
     $(xml)
         .find('[SectionTitle]')
@@ -85,7 +114,7 @@ function UpdateUserData(xml) {
                 
                 $(html).find('.item').remove();
 
-                $(html).find('.title').text($(header).attr('SectionTitle'));
+                $(html).find('.section-title').text($(header).attr('SectionTitle'));
 
                 $(header).find('item').each(function (index, item) {
                     $(html).append($(itemTemplate).text($(item).text()));
@@ -95,30 +124,5 @@ function UpdateUserData(xml) {
             }
 
         });
-
-
-
-
-    //$(xml).find('TechnicalSkills>item')
-    //    .each(function (index, item) {
-    //        $('#technical-skills-area>ul')
-    //            .append($('<li>')
-    //            .attr('class', 'col-md-4')
-    //            .text($(item).text()))
-    //    });
-
-    //console.log($(xml).find('Experiences').attr('SectionTitle'));
-
-    //$(xml).find('Experiences>Experience')
-    //    .each(function (index, experience) {
-    //        console.log($(experience).find('Company').text());
-            
-    //        $(experience)
-    //            .find('item')
-    //            .each(function (index, item) {
-    //                console.log($(item).text())
-    //            });
-    //    });
-
 
 };
